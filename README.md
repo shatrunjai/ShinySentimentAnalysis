@@ -9,8 +9,8 @@ Shiny app for text analytics
 # File: server.R file  and ui.R file                                                        ####################
 ################################################################################################################
 To run this app:
-  1) Open R
-  2) Type in the following commands:
+  a) Open R, and
+  b) Type in the following commands:
 
         install.packages("shiny")
         library(shiny)
