@@ -5,42 +5,42 @@
 # File: ui.R file                                                   #####################
 #########################################################################################
 #Supress warnings
-#options(warn=0)
+options(warn=0)
 
+#Install packages
+ install.packages("devtools")
+ install.packages('DT')
+ install.packages("devtools")
+ install.packages("twitteR")
+ install.packages("reshape2")
+ install.packages("sentimentr")
+ install.packages("plyr")
+ install.packages("ggplot2")
+ install.packages("lazyeval")
+ install.packages("wordcloud")
+ install.packages("RColorBrewer")
+ install.packages("ggplot2")
+ install.packages("SnowballC")
+ install.packages("devtools")
+ install.packages("tm")
+ install.packages("shiny")
+ install.packages("shinythemes")
+ install.packages("rsconnect")
+ install.packages("NLP")
+ install.packages("openNLP")
+ install.packages("reshape2")
+ install.packages("RColorBrewer")
+ install.packages("plotly")
+ install.packages("topicmodels")
+ install.packages("tidytext")
+ install.packages("sentimentr")
+ install.packages("dplyr")
+ install.packages("RWeka")
+ install.packages("reshape2")
 
-# install.packages("devtools")
-# install.packages('DT')
-# install.packages("devtools")
-# install.packages("twitteR")
-# install.packages("reshape2")
-# install.packages("sentimentr")
-# install.packages("plyr")
-# install.packages("ggplot2")
-# install.packages("lazyeval")
-# install.packages("wordcloud")
-# install.packages("RColorBrewer")
-# install.packages("ggplot2")
-# install.packages("SnowballC")
-# install.packages("devtools")
-# install.packages("tm")
-# install.packages("shiny")
-# install.packages("shinythemes")
-# install.packages("rsconnect")
-# install.packages("NLP")
-# install.packages("openNLP")
-# install.packages("reshape2")
-# install.packages("RColorBrewer")
-# install.packages("plotly")
-# install.packages("topicmodels")
-# install.packages("tidytext")
-# install.packages("sentimentr")
-# install.packages("dplyr")
-# install.packages("RWeka")
-# install.packages("reshape2")
-
-# library(devtools)
-#devtools::install_github("aloth/sentiment/sentiment")
-#devtools::install_github("shatrunjai/Omegahat-Rstem")
+# library(devtools)  #Not used
+#devtools::install_github("aloth/sentiment/sentiment")  #Not used
+#devtools::install_github("shatrunjai/Omegahat-Rstem")  #Not used
 
 # required pakacges
 library(devtools)
@@ -102,7 +102,7 @@ shinyUI
                   '.tsv'
                 )
       ),
-      # Taken from: http://shiny.rstudio.com/gallery/file-upload.html
+
       tags$hr(),
       checkboxInput('header', 'First Row Has Column Names', TRUE),
       radioButtons('sep', 'Separator',
