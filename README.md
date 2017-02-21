@@ -1,5 +1,5 @@
 # ShinySentimentAnalysis
-Shiny app for text analytics
+Shiny app for John Hancock Text Analytics Core
 
 
 ################################################################################################################
